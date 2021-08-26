@@ -60,7 +60,7 @@ const DomContent = () => (
         </li>
       </ul>
       <div className={style.resumeDownload}>
-        <a href="../resume.pdf" download target="_blank">Download CV</a>
+        <a href="https://res.cloudinary.com/gabrielcon6/image/upload/v1594607068/myPortfolio/Gabriel_Resume_13JUL_fxg2rf.pdf" download target="_blank">Download CV</a>
       </div>
     </div>
   </aside>

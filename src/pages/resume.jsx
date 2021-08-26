@@ -38,7 +38,7 @@ export default class Resume extends Component {
           path="resume"
         />
         <Document
-          file="../resume.pdf"
+          file="https://res.cloudinary.com/gabrielcon6/image/upload/v1594607068/myPortfolio/Gabriel_Resume_13JUL_fxg2rf.pdf"
           onLoadSuccess={this.onDocumentLoadSuccess}
         >
           <Page pageNumber={pageNumber} />
