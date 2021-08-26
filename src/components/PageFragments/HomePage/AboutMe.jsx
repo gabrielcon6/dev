@@ -28,16 +28,16 @@ const AboutMe = () => {
         <p dangerouslySetInnerHTML={domHtml(pageText.paraTwo)} />
       </div>
       <Row gutter={[20, 20]}>
-        <Col xs={24} sm={24} md={12} lg={8}>
+        <Col xs={18} sm={18} md={8} lg={6}>
           <AboutTile
             img="location.png"
             height={60}
             alt="location image"
             textH4="Born and bought up in"
-            textH3="Mangalore, KA, India"
+            textH3="Porto Alegre, Brazil"
           />
         </Col>
-        <Col xs={24} sm={24} md={12} lg={8}>
+        <Col xs={18} sm={18} md={8} lg={6}>
           <AboutTile
             img="coffee.png"
             alt="coffee image"
@@ -45,23 +45,23 @@ const AboutMe = () => {
             textH3="Coffee + Me = Happiness"
           />
         </Col>
-        <Col xs={24} sm={24} md={12} lg={8}>
+        {/* <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="meeting.png"
             alt="meeting image"
             textH4="Socially Awkward"
             textH3="At times"
           />
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={8}>
+        </Col> */}
+        {/* <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="motorcycle.png"
             alt="motorcycle image"
             textH4="Love Riding"
             textH3="Biker for life"
           />
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={8}>
+        </Col> */}
+        <Col xs={18} sm={18} md={8} lg={6}>
           <AboutTile
             img="web.png"
             alt="web image"
@@ -71,12 +71,12 @@ const AboutMe = () => {
             width={60}
           />
         </Col>
-        <Col xs={24} sm={24} md={12} lg={8}>
+        <Col xs={18} sm={18} md={8} lg={6}>
           <AboutTile
             img="graduation.png"
             alt="graduation image"
-            textH4="Pursued B.Tech in"
-            textH3="Computer Science"
+            textH4="Previous Career"
+            textH3="12 years as a Travel Agent"
             height={60}
             width={60}
           />
