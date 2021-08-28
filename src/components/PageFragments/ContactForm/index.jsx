@@ -43,7 +43,7 @@ export default () => {
           <Input.TextArea size="large" rows={7} placeholder="Description *" />
         </Form.Item>
         <Form.Item>
-          <Button type="primary" shape="round" size="large" htmlType="submit" style={{ background: '#304CFD' }}>
+          <Button type="primary" shape="round" size="large" htmlType="submit" style={{ background: '#0091BE' }}>
             SUBMIT
           </Button>
         </Form.Item>
