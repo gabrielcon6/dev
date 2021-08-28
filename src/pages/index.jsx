@@ -13,6 +13,7 @@ export default () => (
       <SidebarWrapper>
         <>
           <AboutMe />
+          <br></br>
           <Skills />
         </>
       </SidebarWrapper>
