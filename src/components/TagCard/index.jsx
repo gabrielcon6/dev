@@ -1,36 +1,51 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Config from '../../../config';
-import Utils from '../../utils/pageUtils';
 import style from './tags.module.less';
 
 const TagCard = (props) => {
   const {
-    img, name, description, color,
+    img, name, description, stack, color, demo, code
   } = props;
-  const tagPage = Config.pages.tag;
   return (
-    <Link className={style.tagCard} to={Utils.resolvePageUrl(tagPage, name)}>
+    <div className={style.tagCard}>
       <div className={style.tagCard}>
-        <div
-          className={style.tagImg}
-          style={{
-            backgroundImage: `url(${img})`,
-          }}
-        />
+        <img src={img} alt={name} className={style.tagImg} />
         <div className={style.pd20px}>
           <div className="textCenter">
             <h4 style={{ color: `${color}` }}>
-              #
               {name}
             </h4>
           </div>
+
+          <p>
+            <a className={style.down} target="_blank" href={demo}>live demo</a>
+            |
+            <a className={style.down} target="_blank" href={code}>source code</a>
+          </p>
+
           <p>
             {description}
           </p>
+          <p>
+            {stack}
+          </p>
+
+
+
+          {/* <div className={style.codeButtons}>
+            <div className={style.buttonDemo}>
+              <a className={style.down} target="_blank" href={demo}>
+                <span className={style.codes}>live demo</span>
+              </a>
+            </div>
+            <div className={style.buttonCode}>
+              <a className={style.down} target="_blank" href={code}>
+                <span className={style.codes}>source code</span>
+              </a>
+            </div>
+          </div> */}
         </div>
       </div>
-    </Link>
+    </div>
   );
 };
 

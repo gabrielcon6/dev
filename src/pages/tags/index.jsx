@@ -9,18 +9,44 @@ import Header from '../../components/PageLayout/Header';
 import SEO from '../../components/Seo';
 import SidebarWrapper from '../../components/PageLayout/Sidebar';
 import TagCard from '../../components/TagCard';
-import Config from '../../../config';
 
-const Tags = ({ data }) => {
-  const { allFile: { edges } } = data;
-  const rawTags = data.allMarkdownRemark.edges
-    .map((edge) => edge.node.frontmatter.tags)
-    .reduce((prev, curr) => prev.concat(curr));
-  rawTags
-    .filter((tag, index) => index === rawTags.indexOf(tag))
-    .sort(); // Remove duplicates and sort values
-  // const tagPage = Config.pages.tag;
-  const tagData = Config.tags;
+const myProjects = [{
+  img: "tripplanner.gif",
+  name: "TRIPPLANNER",
+  description: "App for travellers to plan their itinerary, inserting daily activities in a calendar.",
+  stack: "Built with Ruby on Rails, CSS & PostgreSQL.",
+  color: "",
+  demo: "https://my-trip-planner-app.herokuapp.com/",
+  code: "https://github.com/gabrielcon6/tripplanner"
+}, {
+  img: "https://res.cloudinary.com/gabrielcon6/image/upload/v1585871895/myPortfolio/mockedin_yda2gr.gif",
+  name: "MOCKEDIN",
+  description: "App for job seekers to simulate an update of their LinkedIn profile. This then shares with the admin (their HR/Career coach), who will review it via our app.",
+  stack: "Built with React, SASS, Express.js & MongoDB.",
+  color: "",
+  demo: "https://mockedin.herokuapp.com/",
+  code: "https://github.com/gabrielcon6/mockedin"
+}, {
+  img: "https://res.cloudinary.com/gabrielcon6/image/upload/v1585871730/myPortfolio/xiio_ujs0m2.gif",
+  name: "X|| 0 TIC-TAC-TOE",
+  description: "A simple tic-tac-toe game. My very first project",
+  stack: "Built with jQuery/vanilla JavaScript, HTML & CSS.",
+  color: "",
+  demo: "https://gabrielcon6.github.io/tic-tac-toe/",
+  code: "https://github.com/gabrielcon6/tic-tac-toe"
+}, {
+  img: "tripplanner.gif",
+  name: "PERSONAL WEBSITE",
+  description: "My portfolio website.",
+  stack: "Built with Gatsby.js.",
+  color: "",
+  demo: "https://my-trip-planner-app.herokuapp.com/",
+  code: "https://github.com/gabrielcon6/tripplanner"
+},
+
+]
+
+const Tags = () => {
   return (
     <Layout className="outerPadding">
       <Layout className="container">
@@ -34,17 +60,20 @@ const Tags = ({ data }) => {
         <SidebarWrapper>
           <>
             <div className="marginTopTitle">
-              <h1 className="titleSeparate">#Tags</h1>
+              <h1 className="titleSeparate">Projects</h1>
             </div>
             <Row gutter={[30, 20]}>
               {
-                edges.map((val) => (
-                  <Col key={val.node.name} xs={24} sm={24} md={12} lg={8}>
+                myProjects.map((val) => (
+                  <Col key={val.name} xs={24} sm={24} md={12} lg={12}>
                     <TagCard
-                      img={val.node.childImageSharp.fluid.src}
-                      name={val.node.name}
-                      description={tagData[val.node.name].description}
-                      color={tagData[val.node.name].color}
+                      img={val.img}
+                      name={val.name}
+                      description={val.description}
+                      stack={val.stack}
+                      color={val.color}
+                      demo={val.demo}
+                      code={val.demo}
                     />
                   </Col>
                 ))
@@ -57,58 +86,5 @@ const Tags = ({ data }) => {
   );
 };
 
-Tags.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            frontmatter: PropTypes.shape({
-              tags: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-            }).isRequired,
-          }).isRequired,
-        }).isRequired,
-      ).isRequired,
-    }).isRequired,
-    allFile: PropTypes.shape({
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            name: PropTypes.string.isRequired,
-            childImageSharp: PropTypes.shape({
-              fluid: PropTypes.object.isRequired,
-            }).isRequired,
-          }).isRequired,
-        }).isRequired,
-      ).isRequired,
-    }).isRequired,
-  }).isRequired,
-};
-
-export const query = graphql`
-  {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index.md$/" } }) {
-      edges {
-        node {
-          frontmatter {
-            tags
-          }
-        }
-      }
-    }
-    allFile(filter: { relativeDirectory: { eq: "tags" } }) {
-      edges {
-        node {
-          name
-          childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
-      }
-    }
-  }
-`;
 
 export default Tags;
