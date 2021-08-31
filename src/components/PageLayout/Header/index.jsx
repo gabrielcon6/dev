@@ -47,7 +47,7 @@ export default () => {
               </Link>
             </li>
             <li className={style.navItem}>
-              <Link to="/resume" onClick={toggleMenu} activeClassName={style.anchorActive}>
+              <Link onClick={toggleMenu} activeClassName={style.anchorActive}>
                 <span ><a style={{ padding: "0px" }} href="https://res.cloudinary.com/gabrielcon6/image/upload/v1594607068/myPortfolio/Gabriel_Resume_13JUL_fxg2rf.pdf" download target="_blank"> Resume &nbsp;  <img src="download.png" height="10px"></img></a></span>
               </Link>
             </li>
