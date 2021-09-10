@@ -1,14 +1,15 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 import AboutTile from '../../AbouTile';
-import { stripTags, domHtml } from '../../../utils/stripTags';
+import { stripTags } from '../../../utils/stripTags';
 
 import SEO from '../../Seo';
 
 const pageText = {
   paraOne: `I am a `,
   paraTwo: `software engineer`,
-  paraThree: ` with a background in consulting. I'm a true people person and love working with teams and/or clients. I have always been curious about learning different things, such as human languages and technology and I enjoy finding creative solutions to problems. I particularly love seeing my work turn into a practical product and that's why I decided to become a software developer.`
+  paraThree: ` with a background in consulting. I have been working with multiple JavaScript frameworks and libraries. I am also a certified AWS Solutions Architect (Associate).`,
+  paraFour: `I'm a true people person and love working with teams and/or clients. I have always been curious about learning different things, such as human languages and technology and I enjoy finding creative solutions to problems. I particularly love seeing my work turn into a practical product and that's why I decided to become a software developer.`
 };
 
 const AboutMe = () => {
@@ -27,6 +28,7 @@ const AboutMe = () => {
         <p>
           {pageText.paraOne} <b>{pageText.paraTwo}</b> {pageText.paraThree}
         </p>
+        <p>{pageText.paraFour}</p>
       </div>
       <Row gutter={[20, 20]}>
         <Col xs={18} sm={18} md={8} lg={6}>
