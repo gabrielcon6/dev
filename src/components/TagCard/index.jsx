@@ -11,9 +11,9 @@ const TagCard = (props) => {
         <img src={img} alt={name} className={style.tagImg} />
         <div className={style.pd20px}>
           <div className="textCenter">
-            <h4 style={{ color: `${color}` }}>
+            <div className={style.name}>
               {name}
-            </h4>
+            </div>
           </div>
 
           <p>

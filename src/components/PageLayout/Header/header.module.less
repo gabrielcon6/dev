@@ -1,7 +1,7 @@
 @import (reference) '../../../styles/index.less';
 
 .circleMenu {
-    background: #0091BE;
+    background: #3097C1;
     border-radius: 50% 0 50% 50%;
     box-shadow: 0 24px 40px rgba(48, 76, 253, 0.1), 0 8px 16px rgba(48, 76, 253, 0.1);
     display: -webkit-flex;
@@ -79,7 +79,7 @@
     .flex-center();
     background-color: #fff;
     border-radius: 0 3rem 0 0;
-    color: #5F6F81;
+    color: rgba(0, 0, 0, 0.85);
     font-weight: 500;
     height: 4.35rem;
     letter-spacing: .04rem;
@@ -87,14 +87,14 @@
     padding-top: 1rem;
     padding-right: 2.5rem;
     position: relative;
-    bottom: -.1px;
+    bottom: -3.73%;
     z-index: 1;
     &:before {
         content: '';
         background-image: url(../../../images/nav-edge.svg);
         height: 102.1%;
         position: absolute;
-        top: 1px;
+        top: 0px;
         left: -133px;
         width: 135px;
         z-index: -1;
@@ -102,14 +102,15 @@
     .navItem{
         margin-right: .4rem;
         a{
-            color: #5F6F81;
+            color: rgba(0, 0, 0, 0.85);
             padding: .6rem 1rem;
             text-transform: uppercase;
         }
         .anchorActive{
-            background-color: #0091BE;
+            // background-color: #3097C1;
             border-radius: 14px;
-            color: #fff;
+            // color: #fff;
+            border: 1px solid #FF965D;
         }
     }
     
@@ -130,7 +131,7 @@
         }
     }
     .nav{
-        background-color: #0091BE;
+        background-color: #3097C1;
         &:before {
             background-image: none;
         }

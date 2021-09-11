@@ -3,8 +3,6 @@ import React from 'react';
 import {
   Layout, Row, Col,
 } from 'antd';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
 import Header from '../../components/PageLayout/Header';
 import SEO from '../../components/Seo';
 import SidebarWrapper from '../../components/PageLayout/Sidebar';
@@ -60,7 +58,7 @@ const Tags = () => {
         <SidebarWrapper>
           <>
             <div className="marginTopTitle">
-              <h1 className="titleSeparate">Projects</h1>
+              <h2 className="titleSeparate">Projects</h2>
             </div>
             <Row gutter={[30, 20]}>
               {
