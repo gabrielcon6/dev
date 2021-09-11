@@ -1,6 +1,6 @@
 module.exports = {
-  pathPrefix: '',
-  siteUrl: 'https://gabrielcon6.github.io/portfolio/',
+  pathPrefix: 'dev',
+  siteUrl: 'https://gabrielcon6.github.io/',
   siteTitle: 'Gabriel Conceicao',
   siteDescription: 'Logbook of a software developer',
   author: 'Gabriel Conceicao',
