@@ -24,7 +24,7 @@ const AboutMe = () => {
           path=""
           keywords={['Gabriel', 'Conceicao', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby']}
         />
-        <h1 className="titleSeparate">Hello!</h1>
+        <h2 className="titleSeparate">Hello!</h2>
         <p>
           {pageText.paraOne} <b>{pageText.paraTwo}</b> {pageText.paraThree}
         </p>

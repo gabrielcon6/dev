@@ -6,12 +6,12 @@ import style from './skill.module.less';
 
 const SkillsProgress = () => (
   <div>
-    <h2 className="titleSeparate">Main Technical Skills</h2>
+    <h2 className="titleSeparate">Main Skills</h2>
 
 
     <Row gutter={[20, 20]}>
       <Col xs={24} sm={24} md={12}>
-        <ul style={{ listStyle: 'none', padding: 0, lineHeight: '2rem' }}>
+        <ul style={{ listStyle: 'none', padding: 0, lineHeight: '2rem', fontSize: '15px' }}>
           <li><img src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="React" className={style.img} />
             React | jQuery | Gatsby | Vanilla JavaScript </li>
           <li><img src="https://cdn.iconscout.com/icon/free/png-512/node-js-1-1174935.png" alt="Node" className={style.img} />
