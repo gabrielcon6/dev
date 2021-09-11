@@ -4,7 +4,6 @@ module.exports = {
   siteTitle: 'Gabriel Conceicao',
   siteDescription: 'Logbook of a software developer',
   author: 'Gabriel Conceicao',
-  postsForArchivePage: 3,
   defaultLanguage: 'en',
   disqusScript: process.env.DISQUS_SCRIPT || 'https://rolwinreevan.disqus.com/embed.js', //change
   pages: {
