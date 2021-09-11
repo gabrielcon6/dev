@@ -28,15 +28,15 @@ const myProjects = [{
   img: "https://res.cloudinary.com/gabrielcon6/image/upload/v1585871730/myPortfolio/xiio_ujs0m2.gif",
   name: "X|| 0 TIC-TAC-TOE",
   description: "A simple tic-tac-toe game. My very first project",
-  stack: "Built with jQuery/vanilla JavaScript, HTML & CSS.",
+  stack: "Built with jQuery/vanilla JS, HTML & CSS.",
   color: "",
   demo: "https://gabrielcon6.github.io/tic-tac-toe/",
   code: "https://github.com/gabrielcon6/tic-tac-toe"
 }, {
-  img: "tripplanner.gif",
+  img: "portfolio-gif.gif",
   name: "PERSONAL WEBSITE",
-  description: "My portfolio website.",
-  stack: "Built with Gatsby.js.",
+  description: "My portfolio.",
+  stack: "Built with Gatsby.js & Less CSS",
   color: "",
   demo: "https://my-trip-planner-app.herokuapp.com/",
   code: "https://github.com/gabrielcon6/tripplanner"
