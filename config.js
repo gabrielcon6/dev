@@ -1,18 +1,16 @@
 module.exports = {
   pathPrefix: '',
-  siteUrl: 'https://rolwinreevan.com',
-  siteTitle: 'Rolwin Reevan',
+  siteUrl: 'https://gabrielcon6.github.io/portfolio/',
+  siteTitle: 'Gabriel Conceicao',
   siteDescription: 'Logbook of a software developer',
-  author: 'Rolwin Reevan',
+  author: 'Gabriel Conceicao',
   postsForArchivePage: 3,
   defaultLanguage: 'en',
-  disqusScript: process.env.DISQUS_SCRIPT || 'https://rolwinreevan.disqus.com/embed.js',
+  disqusScript: process.env.DISQUS_SCRIPT || 'https://rolwinreevan.disqus.com/embed.js', //change
   pages: {
     home: '/',
-    blog: 'blog',
     contact: 'contact',
-    resume: 'resume',
-    tag: 'tags',
+    tag: 'projects',    
   },
   social: {
     github: 'https://github.com/gabrielcon6',
