@@ -18,7 +18,7 @@ const TagCard = (props) => {
 
           <p>
             <a className={style.down} target="_blank" href={demo}>live demo</a>
-            |
+            <span className={style.verticalBar}>|</span>
             <a className={style.down} target="_blank" href={code}>source code</a>
           </p>
 
