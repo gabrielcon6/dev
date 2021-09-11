@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://gabrielcon6.github.io/dev/sitemap/sitemap-index.xml
+Host: https://gabrielcon6.github.io
