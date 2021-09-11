@@ -3,6 +3,7 @@ import {
 } from 'antd';
 import React from 'react';
 import Config from '../../../../config';
+import style from './form.module.less';
 
 const validateMessages = {
   required: 'This field is required!',
@@ -43,7 +44,7 @@ export default () => {
           <Input.TextArea size="large" rows={7} placeholder="Description *" />
         </Form.Item>
         <Form.Item>
-          <Button type="primary" shape="round" size="large" htmlType="submit" style={{ background: '#15bbef' }}>
+          <Button type="primary" shape="round" size="large" htmlType="submit" className={style.submit}>
             SUBMIT
           </Button>
         </Form.Item>
