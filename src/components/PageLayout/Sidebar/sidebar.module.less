@@ -1,129 +1,130 @@
-@import (reference) '../../../styles/index.less';
-.content{
-    border-radius: @border-radius-content;
-    margin: 0px;
-    min-height: 280px
+@import (reference) "../../../styles/index.less";
+.content {
+  border-radius: @border-radius-content;
+  margin: 0px;
+  min-height: 280px;
 }
 
-.sidebarContent{
-    border-radius: @border-radius-full;
-    margin: 0px;
-    aside{
-        padding: @padding-margin-val;
-    
-        .profileAvatar{
-            background-image: url('https://res.cloudinary.com/gabrielcon6/image/upload/v1583215274/Profile_lohcmd.png');
-            height: 219px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: bottom;
-            border-radius:  @border-radius-full;
-            @media screen and (max-width:767px){
-                max-width: 230px;
-                margin: auto;
-                
-            }
-        }
-        .name{
-            margin-top:1.4rem;
-            h2{
-                font-weight: 200;
-                letter-spacing: 2px;
-            }
-            span{
-                font-weight: 600;
-                letter-spacing: 0px;
-            }
-            .badge {
-                margin-top: 0.5rem;
-                font-size: .837rem;
-                font-weight: 400;
-                border-radius: 10rem;
-                padding: .6rem 1rem;
-            }
-            .badgeGray {
-                background-color: #E9EDF0;
-                color: rgba(0, 0, 0, 0.85);
-            }
-            .boxName{
-                width: 100%;
-            }
-            ul{
-                list-style-type: none;
-                a{
-                    color: rgba(0, 0, 0, 0.85);
-                    width: 200px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-    
-                }
-            }
-            .contactBlock {
-                color: #44566C;
-                font-size: .937rem;
-                padding-left: 0;
-                margin-bottom: 1.3rem;
-                @media screen and (max-width: 767px){
-                    max-width: 230px;
-                }
-            }
-            .contactBlockItem {
-                display: -webkit-flex;
-                display: -ms-flexbox;
-                display: -moz-box;
-                display: flex;
-                -webkit-align-items: center;
-                -ms-flex-align: center;
-                align-items: center;
-                margin-bottom: .75rem;
-            }
-            .resumeDownload{
-                a{
-                    padding: .9rem 1rem;
-                    text-transform: uppercase;
-                    background-color: #3097C1;
-                    border-radius: 28px;
-                    color: #fff;
-                }
-            }
-        }
-    }
-    a{
-        color: rgba(0, 0, 0, 0.65);
-        &:hover{
-            color: rgba(0, 0, 0, 0.85);
-        }
-        .emailHider{
-            font-size: 0.837rem;
-            font-weight: 400 !important;
-            &::before{
-                content: 'gabrielcon6cao';
-            }
-            &::after{
-                content:'gmail.com'
-            }
-        }
-    }
-}
-
-.background{
-    .whiteBg()
-}
-.boxContent{
+.sidebarContent {
+  border-radius: @border-radius-full;
+  margin: 0px;
+  aside {
     padding: @padding-margin-val;
-    padding-left: 0;
-    @media screen and (max-width: 767px){
-        padding: @padding-margin-val;
-        padding-top: 0;
+
+    .profileAvatar {
+      background-image: url("https://res.cloudinary.com/gabrielcon6/image/upload/v1583215274/Profile_lohcmd.png");
+      height: 219px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      border-radius: @border-radius-full;
+      &:hover {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+      @media screen and (max-width: 767px) {
+        max-width: 230px;
+        margin: auto;
+      }
     }
-    
+    .name {
+      margin-top: 1.4rem;
+      h2 {
+        font-weight: 200;
+        letter-spacing: 2px;
+      }
+      span {
+        font-weight: 600;
+        letter-spacing: 0px;
+      }
+      .badge {
+        margin-top: 0.5rem;
+        font-size: 0.837rem;
+        font-weight: 400;
+        border-radius: 10rem;
+        padding: 0.6rem 1rem;
+      }
+      .badgeGray {
+        background-color: #e9edf0;
+        color: rgba(0, 0, 0, 0.85);
+      }
+      .boxName {
+        width: 100%;
+      }
+      ul {
+        list-style-type: none;
+        a {
+          color: rgba(0, 0, 0, 0.85);
+          width: 200px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .contactBlock {
+        color: #44566c;
+        font-size: 0.937rem;
+        padding-left: 0;
+        margin-bottom: 1.3rem;
+        @media screen and (max-width: 767px) {
+          max-width: 230px;
+        }
+      }
+      .contactBlockItem {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: -moz-box;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 0.75rem;
+      }
+      .resumeDownload {
+        a {
+          padding: 0.9rem 1rem;
+          text-transform: uppercase;
+          background-color: #3097c1;
+          border-radius: 28px;
+          color: #fff;
+        }
+      }
+    }
+  }
+  a {
+    color: rgba(0, 0, 0, 0.65);
+    &:hover {
+      color: rgba(0, 0, 0, 0.85);
+    }
+    .emailHider {
+      font-size: 0.837rem;
+      font-weight: 400 !important;
+      &::before {
+        content: "gabrielcon6cao";
+      }
+      &::after {
+        content: "gmail.com";
+      }
+    }
+  }
 }
 
-.sideBar404Radius{
-    border-radius: 3rem 0 3rem 3rem;
+.background {
+  .whiteBg();
+}
+.boxContent {
+  padding: @padding-margin-val;
+  padding-left: 0;
+  @media screen and (max-width: 767px) {
+    padding: @padding-margin-val;
+    padding-top: 0;
+  }
+}
+
+.sideBar404Radius {
+  border-radius: 3rem 0 3rem 3rem;
 }
 
 .social {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
