@@ -1,20 +1,23 @@
-import React from 'react';
-import { Row, Col } from 'antd';
-import AboutTile from '../../AbouTile';
-import { stripTags } from '../../../utils/stripTags';
+import React from 'react'
+import { Row, Col } from 'antd'
+import AboutTile from '../../AbouTile'
+import { stripTags } from '../../../utils/stripTags'
 
-import SEO from '../../Seo';
+import SEO from '../../Seo'
 
 const pageText = {
-  paraOne: `I am a `,
-  paraTwo: `software engineer`,
-  paraThree: ` with a background in consulting. I have been working with multiple JavaScript frameworks and libraries. I am also a certified AWS Solutions Architect (Associate).`,
-  paraFour: `I'm a true people person and love working with teams and/or clients. I have always been curious about learning different things, such as human languages and technology and I enjoy finding creative solutions to problems. I particularly love seeing my work turn into a practical product and that's why I decided to become a software developer.`
-};
+  paraOne: 'I am a ',
+  paraTwo: 'software engineer',
+  paraThree:
+    ' with a background in consulting. I have been working with multiple JavaScript frameworks and libraries. I am also a certified AWS Solutions Architect (Associate).',
+  paraFour:
+    "I'm a true people person and love working with teams and/or clients. I have always been curious about learning different things, such as human languages and technology and I enjoy finding creative solutions to problems. I particularly love seeing my work turn into a practical product and that's why I decided to become a software developer."
+}
 
 const AboutMe = () => {
-  const description = `${pageText.paraOne} ${stripTags(pageText.paraTwo)} ${(pageText.paraThree)
-    }`;
+  const description = `${pageText.paraOne} ${stripTags(pageText.paraTwo)} ${
+    pageText.paraThree
+  }`
   return (
     <>
       <div>
@@ -22,7 +25,15 @@ const AboutMe = () => {
           title="About"
           description={description}
           path=""
-          keywords={['Gabriel', 'Conceicao', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby']}
+          keywords={[
+            'Gabriel',
+            'Conceicao',
+            'FullStack developer',
+            'Javascript',
+            'ReactJS',
+            'NodeJS',
+            'Gatsby'
+          ]}
         />
         <h2 className="titleSeparate">Hello!</h2>
         <p>
@@ -61,6 +72,6 @@ const AboutMe = () => {
         </Col>
       </Row>
     </>
-  );
-};
-export default AboutMe;
+  )
+}
+export default AboutMe

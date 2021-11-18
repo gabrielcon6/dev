@@ -1,4 +1,4 @@
-const config = require('./config');
+const config = require('./config')
 
 module.exports = [
   'gatsby-plugin-react-helmet',
@@ -25,13 +25,6 @@ module.exports = [
       icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       legacy: true, // this will add apple-touch-icon links to <head>. Required for
       // versions prior to iOS 11.3.
-    },
-  },
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      name: 'markdown-pages',
-      path: `${__dirname}/content`,
     },
   },
   {
@@ -93,4 +86,4 @@ module.exports = [
       showSpinner: true,
     },
   },
-];
+]

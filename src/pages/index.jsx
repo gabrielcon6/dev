@@ -7,16 +7,16 @@ import AboutMe from '../components/PageFragments/HomePage/AboutMe';
 import Skills from '../components/PageFragments/HomePage/SkillProgress';
 
 export default () => (
-  <Layout className="outerPadding">
-    <Layout className="container">
-      <Header />
-      <SidebarWrapper>
-        <>
-          <AboutMe />
-          <br></br>
-          <Skills />
-        </>
-      </SidebarWrapper>
-    </Layout>
-  </Layout>
+	<Layout className='outerPadding'>
+		<Layout className='container'>
+			<Header />
+			<SidebarWrapper>
+				<>
+					<AboutMe />
+					<br></br>
+					<Skills />
+				</>
+			</SidebarWrapper>
+		</Layout>
+	</Layout>
 );
